@@ -1,0 +1,26 @@
+   <html>
+        <head>
+            <title>class work</title>
+        </head>
+        <body>
+            <h1>login page</h1>
+            <button id="btn">signup</button>
+            <input type="text" placeholder="etered name"  id="Adarsh">
+
+        </body>
+       </html>
+       <script>
+        localStorage.setItem("email", "Adarsh kumar")
+        document.querySelector("#btn").addEventListener("click",signupfunction)
+        function signupfunction(){
+            let name = document.querySelector("#Adarsh").value;
+            if(name=="adarsh"){
+                window.location.href ="index.html";
+
+            } else{
+                alert("enter correct detail")
+            }
+        }
+        // let email=localStorage.getItem("email")
+        // console.log(email)
+       </script>
